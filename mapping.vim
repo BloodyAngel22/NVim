@@ -12,7 +12,7 @@ nnoremap <silent>cb :BufferLineCloseOthers<CR>
 "---NERDTree
 nnoremap <space>o :NERDTreeFocus<CR>
 nnoremap <space>e :NERDTreeToggle<CR>
-nnoremap <space>ff :NERDTreeFind<CR>
+" nnoremap <space>ff :NERDTreeFind<CR>
 
 
 "---Nvim
@@ -20,6 +20,10 @@ nnoremap <space>ff :NERDTreeFind<CR>
 :nnoremap <space>q :q<CR>
 :inoremap jj <esc>
 
+
+"CoC Settings
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 "---OneTerm config
 nnoremap <F7> :OneTerm term<CR>
