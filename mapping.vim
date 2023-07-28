@@ -3,8 +3,6 @@ vnoremap <space>/ <Plug>ToggleCommaround
 
 
 "---Buffer 
-" nnoremap <silent>[b :BufferLineCycleNext<CR>
-" nnoremap <silent>b] :BufferLineCyclePrev<CR>
 nnoremap <silent><space>bb :BufferLinePick<CR>
 nnoremap <silent>cb :BufferLineCloseOthers<CR>
 
@@ -12,7 +10,6 @@ nnoremap <silent>cb :BufferLineCloseOthers<CR>
 "---NERDTree
 nnoremap <space>o :NERDTreeFocus<CR>
 nnoremap <space>e :NERDTreeToggle<CR>
-" nnoremap <space>ff :NERDTreeFind<CR>
 
 
 "---Nvim
@@ -27,10 +24,8 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 
 "---OneTerm config
 nnoremap <F7> :OneTerm term<CR>
-" nnoremap <space>ff :OneTerm ranger<CR>
 
 "---Telescope
 nnoremap <space>ff <cmd>Telescope find_files<cr>
-" nnoremap <space>fg <cmd>Telescope live_grep<cr>
 nnoremap <space>fb <cmd>Telescope buffers<cr>
-" nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <space>fg <cmd>Telescope live_grep<cr>

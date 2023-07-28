@@ -16,3 +16,4 @@ let g:startify_bookmarks = [
 let g:startify_lists = [
       \ { 'header': ['   Bookmarks'], 'type': 'bookmarks' },
       \ ]
+
