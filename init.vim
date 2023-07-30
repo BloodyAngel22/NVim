@@ -81,6 +81,9 @@ Plug 'MunifTanjim/nui.nvim'
 "---Image preview
 Plug 'https://github.com/adelarsq/image_preview.nvim'
 
+"---Clang-format
+Plug 'rhysd/vim-clang-format'
+
 call plug#end()
 
 "---Colorscheme init
