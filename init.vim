@@ -14,11 +14,19 @@ set autoindent
 set complete+=kspell
 set completeopt=menuone,longest
 
+set clipboard+=unnamedplus
+
+let g:system_copy#copy_command='xclip -sel clipboard'
+let g:system_copy#paste_command='xclip -sel clipboard -o'
+let g:system_copy_silent = 1
+let g:system_copy_enable_osc52 = 1
+
 packadd termdebug
 
 call plug#begin()
 
 "---Plug-in install
+Plug 'christoomey/vim-system-copy'
 
 "---File tree
 Plug 'preservim/nerdtree'
@@ -176,3 +184,4 @@ require("telescope").setup({
   },
 })
 EOF
+

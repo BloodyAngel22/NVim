@@ -16,9 +16,9 @@ nnoremap <space>e :NERDTreeToggle<CR>
 :nnoremap <space>w :w<CR>
 :nnoremap <space>q :q<CR>
 :inoremap jj <esc>
+:vnoremap <C-c> y
 
-
-"CoC Settings
+"---CoC Settings
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
@@ -29,3 +29,4 @@ nnoremap <F7> :OneTerm term<CR>
 nnoremap <space>ff <cmd>Telescope find_files<cr>
 nnoremap <space>fb <cmd>Telescope buffers<cr>
 nnoremap <space>fg <cmd>Telescope live_grep<cr>
+
