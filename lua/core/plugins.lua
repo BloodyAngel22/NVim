@@ -82,8 +82,8 @@ require("lazy").setup({
       config = function(_, opts) require'lsp_signature'.setup(opts) end
     },
     { "ggandor/leap.nvim" },
-    { "alec-gibson/nvim-tetris" }
-
+    { "alec-gibson/nvim-tetris" },
+    {'mfussenegger/nvim-dap'},
 })
 
 vim.cmd[[colorscheme tokyonight-moon]]

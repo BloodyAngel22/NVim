@@ -16,5 +16,3 @@ vim.keymap.set('n', '<leader>x', ':BufferLinePickClose<CR>')
 --Comments
 vim.keymap.set('n', '<leader>/', ':CommentToggle<CR>')
 vim.keymap.set('v', '<leader>/', ':CommentToggle<CR>')
-
---Toggle term
