@@ -13,6 +13,7 @@ vim.opt.virtualedit = "block"
 vim.opt.undofile = true
 vim.opt.shell = "/bin/zsh"
 vim.api.nvim_set_option('cursorline', true)
+vim.opt.swapfile = false 
 
 -- Mouse
 vim.opt.mouse = "a"

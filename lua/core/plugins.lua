@@ -84,6 +84,10 @@ require("lazy").setup({
     { "ggandor/leap.nvim" },
     { "alec-gibson/nvim-tetris" },
     {'mfussenegger/nvim-dap'},
+    {'rebelot/kanagawa.nvim'}
 })
 
-vim.cmd[[colorscheme tokyonight-moon]]
+-- vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd("colorscheme kanagawa-wave")
+-- vim.cmd("colorscheme kanagawa-dragon")
+-- vim.cmd("colorscheme kanagawa-lotus")
