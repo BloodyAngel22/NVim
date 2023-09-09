@@ -83,6 +83,7 @@ require("lazy").setup({
     },
     { "ggandor/leap.nvim" },
     { "alec-gibson/nvim-tetris" }
+
 })
 
 vim.cmd[[colorscheme tokyonight-moon]]
