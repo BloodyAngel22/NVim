@@ -10,6 +10,15 @@ lspconfig.rust_analyzer.setup {
   },
 }
 
+lspconfig.lua_ls.setup({
+  settings = {
+    Lua = {
+      completion = {
+        callSnippet = "Replace"
+      }
+    }
+  }
+})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
