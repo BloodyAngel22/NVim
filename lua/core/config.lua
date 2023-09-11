@@ -14,6 +14,9 @@ vim.opt.undofile = true
 vim.opt.shell = "/bin/zsh"
 vim.api.nvim_set_option('cursorline', true)
 vim.opt.swapfile = false 
+vim.opt.textwidth = 80
+vim.opt.wrap = true
+vim.opt.wrapmargin = 2
 
 -- Mouse
 vim.opt.mouse = "a"
