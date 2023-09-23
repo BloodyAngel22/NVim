@@ -18,3 +18,6 @@ vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>')
 --Comments
 vim.keymap.set('n', '<leader>/', ':CommentToggle<CR>')
 vim.keymap.set('v', '<leader>/', ':CommentToggle<CR>')
+
+--MarkDown Preview
+vim.cmd([[nnoremap <leader>md <Plug>MarkdownPreview]])

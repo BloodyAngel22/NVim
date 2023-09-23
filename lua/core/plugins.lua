@@ -87,16 +87,26 @@ require("lazy").setup({
     {'rebelot/kanagawa.nvim'},
     {'onsails/lspkind.nvim'},
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-})
+    {"mfussenegger/nvim-jdtls"},
+    {"rmehri01/onenord.nvim"},
+    {
+      "iamcco/markdown-preview.nvim",
+      config = function()
+        vim.fn["mkdp#util#install"]()
+      end,
+    },
+  })
+
+--Themes
 
 -- vim.cmd("colorscheme kanagawa")
-vim.cmd("colorscheme kanagawa-wave")
+-- vim.cmd("colorscheme kanagawa-wave")
 -- vim.cmd("colorscheme kanagawa-dragon")
 -- vim.cmd("colorscheme kanagawa-lotus")
 -- vim.cmd("colorscheme tokyonight-night")
 -- vim.cmd("colorscheme tokyonight-storm")
 -- vim.cmd("colorscheme tokyonight-day")
--- vim.cmd("colorscheme tokyonight-moon")
+vim.cmd("colorscheme tokyonight-moon")
 -- vim.cmd("colorscheme catppuccin")
 -- vim.cmd("colorscheme catppuccin-latte")
 -- vim.cmd("colorscheme catppuccin-frappe")
