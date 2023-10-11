@@ -37,7 +37,11 @@ require("lazy").setup({
 	  opts = {},
 	},
 	{ 'nvim-treesitter/nvim-treesitter' },
-	{ 'neovim/nvim-lspconfig' },
+	{ 'neovim/nvim-lspconfig' ,
+    -- opts = {
+    --   inlay_hints = { enabled = true },
+    -- },
+  },
     {
         {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
         {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
@@ -95,18 +99,22 @@ require("lazy").setup({
         vim.fn["mkdp#util#install"]()
       end,
     },
+    {"lvimuser/lsp-inlayhints.nvim"},
+    {"williamboman/nvim-lsp-installer"},
+    { 'smithbm2316/centerpad.nvim' },
+    {"xiyaowong/transparent.nvim"},
   })
 
 --Themes
 
--- vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme kanagawa")
 -- vim.cmd("colorscheme kanagawa-wave")
 -- vim.cmd("colorscheme kanagawa-dragon")
 -- vim.cmd("colorscheme kanagawa-lotus")
 -- vim.cmd("colorscheme tokyonight-night")
 -- vim.cmd("colorscheme tokyonight-storm")
 -- vim.cmd("colorscheme tokyonight-day")
-vim.cmd("colorscheme tokyonight-moon")
+-- vim.cmd("colorscheme tokyonight-moon")
 -- vim.cmd("colorscheme catppuccin")
 -- vim.cmd("colorscheme catppuccin-latte")
 -- vim.cmd("colorscheme catppuccin-frappe")
