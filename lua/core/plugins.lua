@@ -103,6 +103,8 @@ require("lazy").setup({
     {"williamboman/nvim-lsp-installer"},
     { 'smithbm2316/centerpad.nvim' },
     {"xiyaowong/transparent.nvim"},
+    {"mg979/vim-visual-multi"},
+    {"chxuan/change-colorscheme"},
   })
 
 --Themes
