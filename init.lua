@@ -2,6 +2,7 @@
 require('core.plugins')
 require('core.mappings')
 require('core.config')
+-- require('core.autocmd')
 
 --PLUGINS
 require('plugins.neotree')
@@ -43,4 +44,5 @@ require('plugins.barbecue')
 require('plugins.cursorline')
 -- require('plugins.pretty-fold')
 -- require('plugins.foldsign')
--- require('plugins.origami')
+require('plugins.origami')
+require('plugins.ibl')
