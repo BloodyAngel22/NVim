@@ -4,6 +4,8 @@ vim.g.mapleader = " "
 vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.cmd([[nnoremap <space>q :q<CR>]])
 -- vim.cmd([[inoremap jj <esc>]])
+vim.keymap.set('n', '<F7>', '<cmd>!./comp.sh<cr>')
+vim.keymap.set('n', '<F5>', '<cmd>!./*.out<cr>')
 
 --NeoTree
 vim.keymap.set('n', '<leader>E', ':Neotree float reveal<CR>')

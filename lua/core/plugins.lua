@@ -246,12 +246,12 @@ require("lazy").setup({
     },
     {"yamatsum/nvim-cursorline"},
     {"yaocccc/nvim-foldsign"},
-    {
-      "chrisgrieser/nvim-origami",
-      event = "BufReadPost", -- later or on keypress would prevent saving folds
-      opts = true, -- needed even when using default config
-    },
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+    -- {
+    --   "chrisgrieser/nvim-origami",
+    --   event = "BufReadPost", -- later or on keypress would prevent saving folds
+    --   opts = true, -- needed even when using default config
+    -- },
+    -- { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     { 'saadparwaiz1/cmp_luasnip' }
 })
 

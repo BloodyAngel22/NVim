@@ -4,9 +4,10 @@
 
 ### Clone the repository
 
+```bash
 git clone --depth 1 https://github.com/BloodyAngel22/NVim.git ~/.config/nvim
-<br>
 nvim
+```
 
 ## FZF 
 
