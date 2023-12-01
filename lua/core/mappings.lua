@@ -15,6 +15,7 @@ vim.keymap.set('n', '<leader>o', ':Neotree float git_status<CR>')
 vim.cmd([[nnoremap <silent><space>bb :BufferLinePick<CR>]])
 vim.keymap.set('n', '<leader>x', ':BufferLinePickClose<CR>')
 vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>')
+vim.keymap.set('n', 'z<Tab>', ':BufferLineCyclePrev<CR>')
 
 --Comments
 vim.keymap.set('n', '<leader>/', ':CommentToggle<CR>')
@@ -27,9 +28,16 @@ vim.cmd([[nnoremap <leader>md <Plug>MarkdownPreview]])
 vim.cmd([[vnoremap <leader>cd :TSCppDefineClassFunc<CR>]])
 
 --telescope
--- vim.cmd([[nnoremap <leader>fb :Telescope file_browser<CR>]])
-vim.keymap.set('n', '<leader>fb', ':Telescope file_browser<CR>')
+vim.cmd([[nnoremap <leader>fb :Telescope file_browser<CR>]])
+-- vim.keymap.set('n', '<leader>fb', ':Telescope file_browser')
 vim.keymap.set('n', '<leader>cc', ':Telescope colorscheme<CR>')
 
 --
 vim.keymap.set("n", "gp", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", {noremap=true})
+
+--Split
+vim.keymap.set('n', '<leader>|', ':vsplit<CR>')
+vim.keymap.set('n', '<leader>-', ':split<CR>')
+
+--TODO
+vim.keymap.set('n', '<leader>ft', ':TodoTelescope<CR>')

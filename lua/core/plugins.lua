@@ -52,9 +52,8 @@ require("lazy").setup({
         "williamboman/mason.nvim"
     },
     {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
-      dependencies = { 'nvim-lua/plenary.nvim',
-      }
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
+      dependencies = { 'nvim-lua/plenary.nvim' }
     },
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
     { "jose-elias-alvarez/null-ls.nvim" },
@@ -252,7 +251,17 @@ require("lazy").setup({
     --   opts = true, -- needed even when using default config
     -- },
     -- { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-    { 'saadparwaiz1/cmp_luasnip' }
+    { 'saadparwaiz1/cmp_luasnip' },
+    {"yochem/autosplit.nvim"},
+    {
+      "folke/todo-comments.nvim",
+      dependencies = { "nvim-lua/plenary.nvim" },
+      opts = {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      },
+    },
 })
 
 --Themes

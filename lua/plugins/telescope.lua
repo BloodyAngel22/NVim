@@ -6,6 +6,23 @@ vim.keymap.set('n', '<leader>gb', builtin.git_branches, {})
 vim.keymap.set('n', '<leader>gc', builtin.git_commits, {})
 vim.keymap.set('n', '<leader>gs', builtin.git_status, {})
 
+require "telescope".setup {
+  pickers = {
+    colorscheme = {
+      enable_preview = true
+    }
+  }
+}
+
+local open_dir = function(config)
+    local opt = require('telescope.themes').get_ivy {
+        cwd = config.dir,
+        prompt_title = config.title,
+        shorten_path = true
+    }
+    require('telescope.builtin').find_files(opt)
+end
+
 local options = {
   defaults = {
     vimgrep_arguments = {
